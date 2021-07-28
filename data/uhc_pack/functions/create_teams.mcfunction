@@ -8,14 +8,16 @@ team add spectate
 team modify spectate color black
 team modify spectate deathMessageVisibility never
 
-team add redstone "Redstone"
-team modify redstone color red
+team add redstone "Hunters"
+#team modify redstone color red
+team modify redstone nametagVisibility hideForOtherTeams
 
-team add gold "Gold"
-team modify gold color yellow
+team add gold "Helpers"
+team modify gold nametagVisibility hideForOtherTeams
+#team modify gold color yellow
 
-team add slime "Slime"
-team modify slime color green
+team add slime "Zedaph"
+#team modify slime color green
 
 team add diamond "Diamond"
 team modify diamond color aqua
