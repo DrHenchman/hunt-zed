@@ -3,7 +3,7 @@
     "icon": {
       "item": "minecraft:enchanted_golden_apple"
     },
-    "title": "UHC",
+    "title": "Hunt Zed",
     "description": "Good luck!",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "show_toast": false,
