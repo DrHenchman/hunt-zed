@@ -5,6 +5,7 @@
 # Handle players who have died or joined the game after it as started
 team join spectate @a[gamemode=survival,tag=!playing,team=]
 execute as @a[tag=playing,scores={uhcDeaths=1..}] run function #hunt_zed:events/on_player_death
+scoreboard players reset @a uhcDeaths
 
 execute if score UHC uhcTick matches 1200 run scoreboard players add UHC uhcMin 1
 execute if score UHC uhcTick matches 1200.. run scoreboard players set UHC uhcTick 0
