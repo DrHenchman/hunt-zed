@@ -1,0 +1,25 @@
+{
+  "parent": "hunt_zed:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_sword"
+    },
+    "title": "MVP",
+    "description": "Most Valuable Player",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "triggered_most_kills": {
+      "trigger": "minecraft:impossible"
+    },
+    "triggered_most_damage_dealt": {
+      "trigger": "minecraft:impossible"
+    },
+    "triggered_most_health": {
+      "trigger": "minecraft:impossible"
+    },
+    "revealed": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

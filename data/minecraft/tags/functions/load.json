@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "uhc_pack:create_scoreboards",
-    "uhc_pack:create_teams",
-    "uhc_pack:create_bossbars",
-    "uhc_pack:create_storage"
+    "hunt_zed:create_scoreboards",
+    "hunt_zed:create_teams",
+    "hunt_zed:create_bossbars",
+    "hunt_zed:create_storage"
   ]
 }

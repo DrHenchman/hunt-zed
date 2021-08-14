@@ -66,7 +66,7 @@ function generate_book() {
         json_text="$json_text$json_sep$(jq --ascii-output --compact-output . "book/$json_file" | jq --raw-input .)"
         json_sep=","
     done
-    local output_file="data/uhc_pack/functions/lobby/reset_book.mcfunction"
+    local output_file="data/hunt_zed/functions/lobby/reset_book.mcfunction"
     echo -n '' > "$output_file"
 
     echo '#' >> "$output_file"

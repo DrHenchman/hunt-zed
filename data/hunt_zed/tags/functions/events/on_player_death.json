@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "hunt_zed:tick"
+    "hunt_zed:running/mark_player_dead"
   ]
 }

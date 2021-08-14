@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "hunt_zed:running/glowing/on_consume_milk",
+    "hunt_zed:running/night_vision/on_consume_milk",
+    "hunt_zed:running/conduit_power/on_consume_milk"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "hunt_zed:running/minute_marker",
+    "hunt_zed:running/border_shrinking/check",
+    "hunt_zed:running/eternal_day",
+    "hunt_zed:running/glowing/check",
+    "hunt_zed:running/night_vision/check",
+    "hunt_zed:running/conduit_power/check",
+    "hunt_zed:running/passive_mob_ai"
+  ]
+}

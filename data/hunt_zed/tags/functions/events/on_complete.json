@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hunt_zed:awards/calculate_winner",
+    "hunt_zed:awards/calculate_heavy_hitter",
+    "hunt_zed:awards/calculate_mostly_harmless",
+    "hunt_zed:awards/calculate_mvp",
+    "hunt_zed:awards/calculate_tank"
+  ]
+}

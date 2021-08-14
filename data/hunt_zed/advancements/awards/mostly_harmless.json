@@ -1,0 +1,19 @@
+{
+  "parent": "hunt_zed:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:feather"
+    },
+    "title": "Mostly Harmless",
+    "description": "Least damage dealt",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "triggered": {
+      "trigger": "minecraft:impossible"
+    },
+    "revealed": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

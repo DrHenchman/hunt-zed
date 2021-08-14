@@ -1,0 +1,27 @@
+{
+  "parent": "hunt_zed:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_sword"
+    },
+    "title": "First Blood",
+    "description": "First to kill another player",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "kill_player": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player"
+        }
+      }
+    },
+    "triggered": {
+      "trigger": "minecraft:impossible"
+    },
+    "revealed": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

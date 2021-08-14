@@ -1,0 +1,19 @@
+{
+  "parent": "hunt_zed:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:shield"
+    },
+    "title": "Tank",
+    "description": "Most damage taken",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "triggered": {
+      "trigger": "minecraft:impossible"
+    },
+    "revealed": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

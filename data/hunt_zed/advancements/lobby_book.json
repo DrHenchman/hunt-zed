@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "currently_lobby_state": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "hunt_zed:lobby/reset_book"
+  }
+}

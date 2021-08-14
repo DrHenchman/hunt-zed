@@ -1,0 +1,16 @@
+{
+  "parent": "hunt_zed:root",
+  "criteria": {
+    "drink_milk": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "minecraft:milk_bucket"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hunt_zed:running/on_consume_milk"
+  }
+}

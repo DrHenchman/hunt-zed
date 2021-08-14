@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "hunt_zed:tick"
+    "hunt_zed:lobby/reset_options"
   ]
 }
