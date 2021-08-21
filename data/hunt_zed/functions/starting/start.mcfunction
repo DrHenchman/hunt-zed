@@ -88,4 +88,11 @@ scoreboard players reset @a uhcKills
 scoreboard players set UHC uhcMin 0
 scoreboard players set UHC uhcTick 0
 scoreboard players set UHC uhcState 4
+
+
+# Set Hunt Zed scores
+scoreboard objectives setdisplay sidebar displayScore
+scoreboard players set Helpers displayScore 0
+scoreboard players set Hunters displayScore 0
+
 function #hunt_zed:events/on_start

@@ -37,3 +37,7 @@ scoreboard objectives add uhcATime minecraft.custom:minecraft.time_since_death "
 scoreboard objectives add uhcDDealt minecraft.custom:minecraft.damage_dealt "Damage Dealt"
 scoreboard objectives add uhcDTaken minecraft.custom:minecraft.damage_taken "Damage Taken"
 scoreboard objectives add uhcKills minecraft.custom:minecraft.player_kills "Kills"
+
+# Hunt Zed scoreboards
+scoreboard objectives add displayScore dummy "Score"
+scoreboard objectives add scoreDelta dummy

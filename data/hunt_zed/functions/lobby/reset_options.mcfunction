@@ -28,6 +28,9 @@ scoreboard players set UHCFriendlyFire uhcEnabled 1
 scoreboard players set UHCShowAdvs uhcEnabled 1
 scoreboard players set UHCConduit uhcEnabled 0
 
+scoreboard players set Hunters scoreDelta 3
+scoreboard players set Helpers scoreDelta 1
+
 # Display options for toggles
 
 data modify storage hunt_zed:text Icon.Shrink set from storage hunt_zed:text Icon.Enabled

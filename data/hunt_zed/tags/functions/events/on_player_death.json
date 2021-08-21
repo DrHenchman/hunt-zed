@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "hunt_zed:running/mark_player_dead"
+    "hunt_zed:running/play_death_sound",
+    "hunt_zed:running/update_score"
   ]
 }
