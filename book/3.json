@@ -13,14 +13,5 @@
     {"text":"\n"},
     {"storage":"hunt_zed:text","nbt":"Icon.Passive","interpret":true,"hoverEvent":{"action":"show_text","value":"Click to toggle between enabled and disabled"},"clickEvent":{"action":"run_command","value":"/trigger uhcOpt set 111"}},
     {"text":" Passive mob AI","color":"dark_gray","hoverEvent":{"action":"show_text","value":"When disabled, passive mobs will not\nhave any AI.\nThis reduces load on the server.\n\nNote that this excludes tamable mobs,\nsuch as wolves and horses"}},
-    {"text":"\n"},
-    {"storage":"hunt_zed:text","nbt":"Icon.RngRespawnHunt","interpret":true,"hoverEvent":{"action":"show_text","value":"Click to toggle between enabled and disabled"},"clickEvent":{"action":"run_command","value":"/trigger uhcOpt set 201"}},
-    {"text":" Hunters randomly respawn","color":"dark_gray"},
-    {"text":"\n"},
-    {"storage":"hunt_zed:text","nbt":"Icon.RngRespawnHelp","interpret":true,"hoverEvent":{"action":"show_text","value":"Click to toggle between enabled and disabled"},"clickEvent":{"action":"run_command","value":"/trigger uhcOpt set 202"}},
-    {"text":" Helpers randomly respawn","color":"dark_gray"},
-    {"text":"\n"},
-    {"storage":"hunt_zed:text","nbt":"Icon.RngRespawnHero","interpret":true,"hoverEvent":{"action":"show_text","value":"Click to toggle between enabled and disabled"},"clickEvent":{"action":"run_command","value":"/trigger uhcOpt set 203"}},
-    {"text":" Hero randomly respawn","color":"dark_gray"},
     {"text":""}
 ]
