@@ -51,3 +51,8 @@ data modify storage hunt_zed:text Icon.NightVision set from storage hunt_zed:tex
 data modify storage hunt_zed:text Icon.FriendlyFire set from storage hunt_zed:text Icon.Enabled
 data modify storage hunt_zed:text Icon.ShowAdvancements set from storage hunt_zed:text Icon.Enabled
 data modify storage hunt_zed:text Icon.ConduitPower set from storage hunt_zed:text Icon.Disabled
+
+data modify storage hunt_zed:text Icon.RngRespawnHunt set from storage hunt_zed:text Icon.Enabled
+data modify storage hunt_zed:text Icon.RngRespawnHelp set from storage hunt_zed:text Icon.Enabled
+data modify storage hunt_zed:text Icon.RngRespawnHero set from storage hunt_zed:text Icon.Enabled
+

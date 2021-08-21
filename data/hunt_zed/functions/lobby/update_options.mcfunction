@@ -28,7 +28,7 @@ execute if score @s[tag=admin] uhcOpt matches 17 run scoreboard players remove U
 execute if score @s[tag=admin] uhcOpt matches 18 run scoreboard players add UHC uhcTeams 1
 execute if score UHC uhcTeams matches 15.. run scoreboard players set UHC uhcTeams 2
 execute if score UHC uhcTeams matches ..1 run scoreboard players set UHC uhcTeams 14
-execute if score @s[tag=admin] uhcOpt matches 17..18 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Teams ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcTeams"},"color":"gold"}]
+execute if score @s[tag=admin] uhcOpt matches 17..18 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Teams ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcTeams"},"color":"gold"}]
 
 # 19 - Randomize teams
 execute if score @s[tag=admin] uhcOpt matches 19 run team leave @a[team=!spectate,team=!hero]
@@ -44,7 +44,7 @@ execute if score @s[tag=admin] uhcOpt matches 20 run scoreboard players remove U
 execute if score @s[tag=admin] uhcOpt matches 21 run scoreboard players add UHC uhcBSize 512
 execute if score UHC uhcBSize matches 3057.. run scoreboard players set UHC uhcBSize 496
 execute if score UHC uhcBSize matches ..495 run scoreboard players set UHC uhcBSize 3056
-execute if score @s[tag=admin] uhcOpt matches 20..21 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"World size ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcBSize"},"color":"gold"}]
+execute if score @s[tag=admin] uhcOpt matches 20..21 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"World size ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcBSize"},"color":"gold"}]
 
 # >>>> Adjust border shrink start (min=0, max=100)
 # 22 - Reduce border shrink start by 10 (or cycle to max)
@@ -53,7 +53,7 @@ execute if score @s[tag=admin] uhcOpt matches 22 run scoreboard players remove U
 execute if score @s[tag=admin] uhcOpt matches 23 run scoreboard players add UHC uhcSBStrt 10
 execute if score UHC uhcSBStrt matches 101.. run scoreboard players set UHC uhcSBStrt 0
 execute if score UHC uhcSBStrt matches ..-1 run scoreboard players set UHC uhcSBStrt 100
-execute if score @s[tag=admin] uhcOpt matches 22..23 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Border shrink start ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcSBStrt"},"color":"gold"},{"text":" minutes"}]
+execute if score @s[tag=admin] uhcOpt matches 22..23 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Border shrink start ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcSBStrt"},"color":"gold"},{"text":" minutes"}]
 
 # >>>> Adjust border shrink size (min=16, max=496)
 # 24 - Reduce border shrink size by 96 (or cycle to max)
@@ -62,7 +62,7 @@ execute if score @s[tag=admin] uhcOpt matches 24 run scoreboard players remove U
 execute if score @s[tag=admin] uhcOpt matches 25 run scoreboard players add UHC uhcSBSize 96
 execute if score UHC uhcSBSize matches 497.. run scoreboard players set UHC uhcSBSize 16
 execute if score UHC uhcSBSize matches ..15 run scoreboard players set UHC uhcSBSize 496
-execute if score @s[tag=admin] uhcOpt matches 24..25 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Border shrink size ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcSBSize"},"color":"gold"}]
+execute if score @s[tag=admin] uhcOpt matches 24..25 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Border shrink size ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcSBSize"},"color":"gold"}]
 
 # >>>> Adjust border shrink duration (min=10, max=100)
 # 26 - Reduce border shrink duration by 10 (or cycle to max)
@@ -71,7 +71,7 @@ execute if score @s[tag=admin] uhcOpt matches 26 run scoreboard players remove U
 execute if score @s[tag=admin] uhcOpt matches 27 run scoreboard players add UHC uhcSBDur 10
 execute if score UHC uhcSBDur matches 101.. run scoreboard players set UHC uhcSBDur 10
 execute if score UHC uhcSBDur matches ..9 run scoreboard players set UHC uhcSBDur 100
-execute if score @s[tag=admin] uhcOpt matches 26..27 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Border shrink duration ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcSBDur"},"color":"gold"},{"text":" minutes"}]
+execute if score @s[tag=admin] uhcOpt matches 26..27 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Border shrink duration ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcSBDur"},"color":"gold"},{"text":" minutes"}]
 
 # 28 - Pre-generate
 execute if score @s[tag=admin] uhcOpt matches 28 run function hunt_zed:pre_generation/start
@@ -97,7 +97,7 @@ execute if score @s[tag=admin] uhcOpt matches 100 run scoreboard players remove 
 execute if score @s[tag=admin] uhcOpt matches 101 run scoreboard players add UHC uhcMM 10
 execute if score UHC uhcMM matches 61.. run scoreboard players set UHC uhcMM 10
 execute if score UHC uhcMM matches ..9 run scoreboard players set UHC uhcMM 60
-execute if score @s[tag=admin] uhcOpt matches 100..101 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Minute marker ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcMM"},"color":"gold"},{"text":" minutes"}]
+execute if score @s[tag=admin] uhcOpt matches 100..101 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Minute marker ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcMM"},"color":"gold"},{"text":" minutes"}]
 
 # >>>> Adjust Eternal day start (min=0, max=100)
 # 102 - Reduce eternal day start by 10 (or cycle to max)
@@ -106,7 +106,7 @@ execute if score @s[tag=admin] uhcOpt matches 102 run scoreboard players remove 
 execute if score @s[tag=admin] uhcOpt matches 103 run scoreboard players add UHC uhcEter 10
 execute if score UHC uhcEter matches 101.. run scoreboard players set UHC uhcEter 0
 execute if score UHC uhcEter matches ..-1 run scoreboard players set UHC uhcEter 100
-execute if score @s[tag=admin] uhcOpt matches 102..103 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Eternal day start ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcEter"},"color":"gold"},{"text":" minutes"}]
+execute if score @s[tag=admin] uhcOpt matches 102..103 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Eternal day start ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcEter"},"color":"gold"},{"text":" minutes"}]
 
 # >>>> Adjust Glowing start (min=0, max=200)
 # 104 - Reduce glowing start by 10 (or cycle to max)
@@ -115,7 +115,7 @@ execute if score @s[tag=admin] uhcOpt matches 104 run scoreboard players remove 
 execute if score @s[tag=admin] uhcOpt matches 105 run scoreboard players add UHC uhcGlow 10
 execute if score UHC uhcGlow matches 201.. run scoreboard players set UHC uhcGlow 0
 execute if score UHC uhcGlow matches ..-1 run scoreboard players set UHC uhcGlow 200
-execute if score @s[tag=admin] uhcOpt matches 104..105 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Glowing start ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunt Zed","objective":"uhcGlow"},"color":"gold"},{"text":" minutes"}]
+execute if score @s[tag=admin] uhcOpt matches 104..105 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Glowing start ","color":"aqua"},{"text":"set to "},{"score":{"name":"UHC","objective":"uhcGlow"},"color":"gold"},{"text":" minutes"}]
 
 # 106 - Toggle Eternal day
 execute if score @s[tag=admin] uhcOpt matches 106 run execute store success score UHCEter uhcEnabled run execute if score UHCEter uhcEnabled matches 0
@@ -207,6 +207,31 @@ execute if score UHCConduit uhcEnabled matches 1 run data modify storage hunt_ze
 execute if score UHCConduit uhcEnabled matches 0 run data modify storage hunt_zed:text Icon.ConduitPower set from storage hunt_zed:text Icon.Disabled
 execute if score @s[tag=admin] uhcOpt matches 118 if score UHCConduit uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Conduit Power","color":"aqua"},{"text":" is "},{"text":"Enabled","color":"dark_green"}]
 execute if score @s[tag=admin] uhcOpt matches 118 if score UHCConduit uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Conduit Power","color":"aqua"},{"text":" is "},{"text":"Disabled","color":"red"}]
+
+# HUNT ZED OPTIONS
+# 201 - Toggle Random Respawn Hunters
+execute if score @s[tag=admin] uhcOpt matches 201 run execute store success score rngRespawnHunt uhcEnabled run execute if score rngRespawnHunt uhcEnabled matches 0
+execute if score rngRespawnHunt uhcEnabled matches 1 run data modify storage hunt_zed:text Icon.RngRespawnHunt set from storage hunt_zed:text Icon.Enabled
+execute if score rngRespawnHunt uhcEnabled matches 0 run data modify storage hunt_zed:text Icon.RngRespawnHunt set from storage hunt_zed:text Icon.Disabled
+execute if score @s[tag=admin] uhcOpt matches 201 if score rngRespawnHunt uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Hunters","color":"aqua"},{"text":" is "},{"text":"Enabled","color":"dark_green"}]
+execute if score @s[tag=admin] uhcOpt matches 201 if score rngRespawnHunt uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Hunters","color":"aqua"},{"text":" is "},{"text":"Disabled","color":"red"}]
+
+# 202 - Toggle Random Respawn Hunters
+execute if score @s[tag=admin] uhcOpt matches 202 run execute store success score rngRespawnHelp uhcEnabled run execute if score rngRespawnHelp uhcEnabled matches 0
+execute if score rngRespawnHelp uhcEnabled matches 1 run data modify storage hunt_zed:text Icon.RngRespawnHelp set from storage hunt_zed:text Icon.Enabled
+execute if score rngRespawnHelp uhcEnabled matches 0 run data modify storage hunt_zed:text Icon.RngRespawnHelp set from storage hunt_zed:text Icon.Disabled
+execute if score @s[tag=admin] uhcOpt matches 202 if score rngRespawnHelp uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Helpers","color":"aqua"},{"text":" is "},{"text":"Enabled","color":"dark_green"}]
+execute if score @s[tag=admin] uhcOpt matches 202 if score rngRespawnHelp uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Helpers","color":"aqua"},{"text":" is "},{"text":"Disabled","color":"red"}]
+
+# 203 - Toggle Random Respawn Hero
+execute if score @s[tag=admin] uhcOpt matches 203 run execute store success score rngRespawnHero uhcEnabled run execute if score rngRespawnHero uhcEnabled matches 0
+execute if score rngRespawnHero uhcEnabled matches 1 run data modify storage hunt_zed:text Icon.RngRespawnHero set from storage hunt_zed:text Icon.Enabled
+execute if score rngRespawnHero uhcEnabled matches 0 run data modify storage hunt_zed:text Icon.RngRespawnHero set from storage hunt_zed:text Icon.Disabled
+execute if score @s[tag=admin] uhcOpt matches 203 if score rngRespawnHero uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Hero","color":"aqua"},{"text":" is "},{"text":"Enabled","color":"dark_green"}]
+execute if score @s[tag=admin] uhcOpt matches 203 if score rngRespawnHero uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Hero","color":"aqua"},{"text":" is "},{"text":"Disabled","color":"red"}]
+
+
+
 
 # Handle sound effects and permission errors
 execute if score @s[tag=!admin] uhcOpt matches 17.. run tellraw @s [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 Sorry, only "},{"text":"UHC Admins","color":"gold"},{"text":" can perform that action"}]
