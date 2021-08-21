@@ -28,6 +28,10 @@ scoreboard players set UHCFriendlyFire uhcEnabled 1
 scoreboard players set UHCShowAdvs uhcEnabled 1
 scoreboard players set UHCConduit uhcEnabled 0
 
+scoreboard players set rngRespawnHunt uhcEnabled 1
+scoreboard players set rngRespawnHelp uhcEnabled 1
+scoreboard players set rngRespawnHero uhcEnabled 1
+
 scoreboard players set Hunters scoreDelta 3
 scoreboard players set Helpers scoreDelta 1
 
