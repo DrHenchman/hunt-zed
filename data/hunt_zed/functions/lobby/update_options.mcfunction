@@ -230,6 +230,24 @@ execute if score rngRespawnHero uhcEnabled matches 0 run data modify storage hun
 execute if score @s[tag=admin] uhcOpt matches 203 if score rngRespawnHero uhcEnabled matches 1 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Hero","color":"aqua"},{"text":" is "},{"text":"Enabled","color":"dark_green"}]
 execute if score @s[tag=admin] uhcOpt matches 203 if score rngRespawnHero uhcEnabled matches 0 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Random Respawn Hero","color":"aqua"},{"text":" is "},{"text":"Disabled","color":"red"}]
 
+# >>>> Adjust Hunters points (min=1, max=20)
+# 204 - Reduce points by 1 (or cycle to max)
+# 205 - Increase points by 1 (or cycle to min)
+execute if score @s[tag=admin] uhcOpt matches 204 run scoreboard players remove Hunters scoreDelta 1
+execute if score @s[tag=admin] uhcOpt matches 205 run scoreboard players add Hunters scoreDelta 1
+execute if score Hunters scoreDelta matches 21.. run scoreboard players set Hunters scoreDelta 1
+execute if score Hunters scoreDelta matches ..0 run scoreboard players set Hunters scoreDelta 20
+execute if score @s[tag=admin] uhcOpt matches 204..205 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Hunters points ","color":"aqua"},{"text":"set to "},{"score":{"name":"Hunters","objective":"scoreDelta"},"color":"gold"}]
+
+# >>>> Adjust Helpers points (min=1, max=20)
+# 206 - Reduce points by 1 (or cycle to max)
+# 207 - Increase points by 1 (or cycle to min)
+execute if score @s[tag=admin] uhcOpt matches 206 run scoreboard players remove Helpers scoreDelta 1
+execute if score @s[tag=admin] uhcOpt matches 207 run scoreboard players add Helpers scoreDelta 1
+execute if score Helpers scoreDelta matches 21.. run scoreboard players set Helpers scoreDelta 1
+execute if score Helpers scoreDelta matches ..0 run scoreboard players set Helpers scoreDelta 20
+execute if score @s[tag=admin] uhcOpt matches 206..207 run tellraw @a [{"text":""},{"text":"Hunt Zed","color":"light_purple"},{"text":" \u2503 "},{"text":"Options","color":"gray"},{"text":" \u2503 "},{"text":"Helpers points ","color":"aqua"},{"text":"set to "},{"score":{"name":"Helpers","objective":"scoreDelta"},"color":"gold"}]
+
 
 
 
