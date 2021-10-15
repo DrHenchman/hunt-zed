@@ -4,6 +4,8 @@
     "hunt_zed:create_scoreboards",
     "hunt_zed:create_teams",
     "hunt_zed:create_bossbars",
-    "hunt_zed:create_storage"
+    "hunt_zed:create_storage",
+    "selective_keep_inventory:load",
+		"selective_keep_inventory:tick"
   ]
 }

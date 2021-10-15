@@ -63,6 +63,7 @@ execute in minecraft:the_end run gamerule naturalRegeneration false
 gamerule randomTickSpeed 3
 gamerule doFireTick true
 gamerule doDaylightCycle true
+gamerule keepInventory false
 time set 0
 weather thunder 1
 
@@ -95,4 +96,10 @@ scoreboard objectives setdisplay sidebar displayScore
 scoreboard players set Helpers displayScore 0
 scoreboard players set Hunters displayScore 0
 
+# Give keepInventory tags
+
+tag @a[team=helpers] add keepInventory
+tag @a[team=hunters] add keepInventory
+
 function #hunt_zed:events/on_start
+function selective_keep_inventory:tick
